@@ -11,7 +11,7 @@ app.use('/users', userRoutes);
 app.get('/', (req, res) => {
     res.send('Backend connected to MySQL');
 })
-
+/*
 app.get('/users', (req,res) => {
     db.query('SELECT * FROM users', (err, results) => {
         if(err) {
@@ -21,8 +21,8 @@ app.get('/users', (req,res) => {
             res.json(results);
         }
     })
-})
-
+})*/
+/*
 app.get('/users/:id', (req, res) => {
   const userId = req.params.id;
 
@@ -80,7 +80,7 @@ app.delete('/users/:id', (req, res) => {
     })
 })
 
-app.put('/users/:id', (req, res) => {
+/*app.put('/users/:id', (req, res) => {
   const id = req.params.id;
   const { name, email, password } = req.body;
 
@@ -102,8 +102,7 @@ app.put('/users/:id', (req, res) => {
 
     res.status(200).json({ message: 'Usuario actualizado correctamente' });
   });
-});
-
+});*/
 
 
 app.listen(port, ()=> {
