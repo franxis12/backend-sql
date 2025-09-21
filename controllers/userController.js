@@ -48,7 +48,7 @@ const createUser = (req, res) => {
       console.error('Error al insertar usuario:', err);
       return res.status(500).json({ error: 'Error interno al crear el usuario' });
     }
-
+//
     res.status(201).json({ message: 'Usuario creado correctamente', userId: result.insertId });
   });
 }
