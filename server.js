@@ -10,6 +10,7 @@ app.use('/users', userRoutes);
 
 app.get('/', (req, res) => {
     res.send('Backend connected to MySQL');
+    console.log("Test")
 })
 /*
 app.get('/users', (req,res) => {
